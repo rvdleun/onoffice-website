@@ -1,0 +1,35 @@
+@import 'variables';
+
+#join-today {
+  color: $color-white-light;
+  text-align: center;
+
+  .content {
+    top: calc(50vh - 202px);
+  }
+
+  h1,
+  .text {
+    padding-top: 0;
+    padding-bottom: 85px;
+  }
+
+  p {
+    width: 1024px;
+  }
+
+  .form {
+    input {
+      float: left;
+      font-size: 18px;
+      width: calc(100% - 230px);
+      padding: 35px 45px;
+      color: $color-black;
+    }
+
+    button {
+      float: right;
+      padding: 28px 50px;
+    }
+  }
+}

@@ -332,25 +332,13 @@ textarea,
   overflow: hidden;
 }
 
-#intro .content h1 {
-  font-size: 40px;
-  padding-top: 110px;
-  padding-bottom: 110px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 #intro .content .text {
-  float: left;
-  font-size: 20px;
   color: #262261;
-  line-height: 34px;
   width: 506px;
 }
 
 #intro .content .text p {
   margin-left: 100px;
-  margin-bottom: 10px;
 }
 
 #intro .content .pictures {
@@ -378,20 +366,36 @@ textarea,
   text-align: center;
 }
 
-#intro .launch-demo a {
-  background-color: #ff3c4b;
-  font-size: 24px;
-  color: #FFFFFF;
-  letter-spacing: 5px;
+#join-today {
+  color: #ffffff;
   text-align: center;
-  line-height: 38px;
-  text-decoration: none;
-  padding: 45px 64px;
-  transition: 1s all;
 }
 
-#intro .launch-demo a:hover {
-  background-color: #E53543;
+#join-today .content {
+  top: calc(50vh - 202px);
+}
+
+#join-today h1,
+#join-today .text {
+  padding-top: 0;
+  padding-bottom: 85px;
+}
+
+#join-today p {
+  width: 1024px;
+}
+
+#join-today .form input {
+  float: left;
+  font-size: 18px;
+  width: calc(100% - 230px);
+  padding: 35px 45px;
+  color: #000000;
+}
+
+#join-today .form button {
+  float: right;
+  padding: 28px 50px;
 }
 
 .menu {
@@ -520,4 +524,38 @@ textarea,
   left: calc((100vw / 2) - 512px);
   width: 1024px;
   z-index: 100;
+}
+
+.screen .content h1 {
+  font-size: 40px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.screen .content .text {
+  float: left;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.screen .content .text p {
+  margin-bottom: 10px;
+}
+
+.screen .content .button {
+  background-color: #ff3c4b;
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 38px;
+  text-decoration: none;
+  padding: 45px 64px;
+  transition: 1s all;
+}
+
+.screen .content .button:hover {
+  background-color: #E53543;
 }

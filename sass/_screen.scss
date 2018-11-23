@@ -65,5 +65,40 @@
     left: calc((100vw / 2) - 512px);
     width: 1024px;
     z-index: 100;
+
+    h1 {
+      font-size: 40px;
+      padding-top: 110px;
+      padding-bottom: 110px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .text {
+      float: left;
+      font-size: 20px;
+      line-height: 34px;
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    .button {
+      background-color: $color-red-light;
+      font-size: 24px;
+      color: #FFFFFF;
+      letter-spacing: 5px;
+      text-align: center;
+      line-height: 38px;
+      text-decoration: none;
+
+      padding: 45px 64px;
+      transition: 1s all;
+    }
+
+    .button:hover {
+      background-color: $color-red-dark;
+    }
   }
 }
