@@ -1,0 +1,70 @@
+@import 'variables';
+
+#intro {
+  .content {
+    h1 {
+      font-size: 40px;
+      padding-top: 110px;
+      padding-bottom: 110px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .text {
+      float: left;
+      font-size: 20px;
+      color: #262261;
+      line-height: 34px;
+      width: 506px;
+
+      p {
+        margin-left: 100px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .pictures {
+      width: 512px;
+      float: right;
+
+      .picture-1 {
+        background-color: $color-blue-dark;
+        width: 300px;
+        height: 175px;
+
+        transform: translateX(140px) translateY(30px) rotate(15deg);
+      }
+
+      .picture-2 {
+        background-color: $color-red-dark;
+        width: 300px;
+        height: 175px;
+
+        transform: translateX(140px) translateY(-10px) rotate(-15deg);
+      }
+    }
+  }
+
+  .launch-demo {
+    position: absolute;
+    bottom: 85px;
+    text-align: center;
+
+    a {
+      background-color: $color-red-light;
+      font-size: 24px;
+      color: #FFFFFF;
+      letter-spacing: 5px;
+      text-align: center;
+      line-height: 38px;
+      text-decoration: none;
+
+      padding: 45px 64px;
+      transition: 1s all;
+    }
+
+    a:hover {
+      background-color: $color-red-dark;
+    }
+  }
+}

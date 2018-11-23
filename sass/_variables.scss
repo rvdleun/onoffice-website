@@ -1,0 +1,32 @@
+//
+// Typography
+//
+
+$font-size-root:         16px;
+$font-size-base:         1rem;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+$line-height-base:       1.5;
+
+//
+// Breakpoints
+//
+
+$sm-viewport: 560px;
+$md-viewport: 760px;
+$lg-viewport: 960px;
+
+//
+// Spacing
+//
+
+$spacer: 1rem;
+
+$media-screen-min-height: "screen and (max-height: $screen-min-height)";
+$screen-min-height: 1000px;
+
+$color-blue-dark: #262261;
+$color-blue-light: #312f67;
+$color-red-dark: #E53543;
+$color-red-light: #ff3c4b;
+$color-white-light: #ffffff;
+$color-white-dark: #f4f4f7;

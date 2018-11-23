@@ -1,0 +1,69 @@
+@import 'variables';
+
+.screen {
+  position: relative;
+  height: calc(100vh);
+  min-height: $screen-min-height;
+
+  &.background-white {
+    .background-divider-left {
+      border-bottom: calc(100vh) solid $color-white-light;
+
+      @media #{$media-screen-min-height} {
+        border-bottom-width: $screen-min-height;
+      }
+    }
+    .background-divider-right {
+      background-color: $color-white-dark;
+    }
+  }
+
+  &.background-blue {
+    .background-divider-left {
+      border-top: calc(100vh) solid $color-blue-light;
+
+      @media #{$media-screen-min-height} {
+        border-top-width: $screen-min-height;
+      }
+    }
+    .background-divider-right {
+      background-color: $color-blue-dark;
+    }
+  }
+
+  .background-divider-left {
+    position: relative;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-right: calc(37.5vw) solid transparent;
+    padding-left: calc(37.5vw);
+    z-index: 2;
+  }
+
+  .background-divider-right {
+    transform: translateY(-100vh);
+    width: 100%;
+    z-index: 1;
+
+
+    @media #{$media-screen-min-height} {
+      transform: translateY(-$screen-min-height);
+    }
+  }
+
+  .background-divider {
+    min-height: calc(100vh);
+
+    @media #{$media-screen-min-height} {
+      min-height: $screen-min-height;
+    }
+  }
+
+  .content {
+    position: absolute;
+    left: calc((100vw / 2) - 512px);
+    width: 1024px;
+    z-index: 100;
+  }
+}
