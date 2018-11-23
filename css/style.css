@@ -327,9 +327,46 @@ textarea,
   overflow: hidden;
 }
 
+#features .content {
+  top: calc(50vh - 249px);
+}
+
+@media screen and (max-height: 1000px) {
+  #features .content {
+    top: calc(500px - 249px);
+  }
+}
+
+#features h1 {
+  padding-top: 0;
+}
+
+#features .features {
+  width: 100%;
+}
+
+#features .features .feature {
+  float: left;
+  text-align: center;
+  width: 33%;
+}
+
+#features .features .feature .icon {
+  width: 200px;
+  height: 250px;
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #footer {
   max-height: 250px;
   overflow: hidden;
+}
+
+#footer .content {
+  color: #ffffff;
+  margin-top: 110px;
 }
 
 #intro .content .text {
@@ -372,7 +409,13 @@ textarea,
 }
 
 #join-today .content {
-  top: calc(50vh - 202px);
+  top: calc(50vh - height-content-half);
+}
+
+@media screen and (max-height: 1000px) {
+  #join-today .content {
+    top: calc(500px - 202px);
+  }
 }
 
 #join-today h1,
@@ -447,10 +490,11 @@ textarea,
 .menu ul li {
   float: left;
   list-style: none;
+  margin-right: 50px;
 }
 
-.menu ul li:first-child {
-  margin-right: 50px;
+.menu ul li:last-child {
+  margin-right: 0;
 }
 
 .screen {

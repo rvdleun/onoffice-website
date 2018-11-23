@@ -48,9 +48,10 @@
     li {
       float: left;
       list-style: none;
+      margin-right: 50px;
 
-      &:first-child {
-        margin-right: 50px;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

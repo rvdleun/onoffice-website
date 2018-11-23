@@ -1,11 +1,16 @@
 @import 'variables';
 
+$height-content-half: 202px;
 #join-today {
   color: $color-white-light;
   text-align: center;
 
   .content {
-    top: calc(50vh - 202px);
+    top: calc(50vh - #{height-content-half});
+
+    @media #{$media-screen-min-height} {
+      top: calc(#{$screen-min-height / 2} - #{$height-content-half});
+    }
   }
 
   h1,
