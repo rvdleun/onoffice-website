@@ -1,0 +1,37 @@
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/splash-screen.css">
+
+<div id="splash-screen">
+  <div id="body">
+    <img src="assets/logo.png" />
+
+    <div class="screen" id="form">
+      <p>Please fill in your code below</p>
+      <div>
+        <input type="text" title="Code" />
+        <button id="submit">Submit</button>
+      </div>
+    </div>
+
+    <div class="screen" id="loading">
+      <p>Fetching your data, please wait...</p>
+    </div>
+
+    <div class="screen" id="error-while-connecting">
+      <p>Unable to connect to On/Office. Please check the following...</p>
+      <ul>
+        <li>Are you on the same network as the computer?</li>
+        <li>Is the On/Office app running and streaming?</li>
+        <li>Does a firewall prevent access to port 24242?</li>
+      </ul>
+      <button id="try-again">Try again</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
