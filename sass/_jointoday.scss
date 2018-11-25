@@ -20,14 +20,20 @@ $height-content-half: 202px;
   }
 
   p {
-    width: 1024px;
+    max-width: 1024px;
+
+    @media #{$media-screen-md} {
+      width: auto;
+    }
   }
 
   .form {
+    padding: 0 20px;
+    text-align: center;
     input {
       float: left;
       font-size: 18px;
-      width: calc(100% - 230px);
+      width: calc(100% - 240px);
       padding: 35px 45px;
       color: $color-black;
     }
@@ -35,6 +41,15 @@ $height-content-half: 202px;
     button {
       float: right;
       padding: 28px 50px;
+    }
+
+    @media #{$media-screen-md} {
+      button,
+      input {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+      }
     }
   }
 }

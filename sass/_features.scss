@@ -29,6 +29,14 @@ $height-content-half: 249px;
       float: left;
       text-align: center;
       width: 33%;
+
+      @media #{$media-screen-md} {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        width: 100%;
+      }
     }
   }
 }

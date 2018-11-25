@@ -1,81 +1,14 @@
 @import 'variables';
 
 .screen {
-  position: relative;
-  height: calc(100vh);
-  min-height: $screen-min-height;
-
-  &.background-white {
-    .background-divider-left {
-      border-bottom: calc(100vh) solid $color-white-light;
-
-      @media #{$media-screen-min-height} {
-        border-bottom-width: $screen-min-height;
-      }
-    }
-    .background-divider-right {
-      background-color: $color-white-dark;
-    }
-  }
-
-  &.background-blue {
-    .background-divider-left {
-      border-top: calc(100vh) solid $color-blue-light;
-
-      @media #{$media-screen-min-height} {
-        border-top-width: $screen-min-height;
-      }
-    }
-    .background-divider-right {
-      background-color: $color-blue-dark;
-    }
-  }
-
-  .background-divider-left {
-    position: relative;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-right: calc(37.5vw) solid transparent;
-    padding-left: calc(37.5vw);
-    z-index: 2;
-  }
-
-  .background-divider-right {
-    transform: translateY(-100vh);
-    width: 100%;
-    z-index: 1;
-
-
-    @media #{$media-screen-min-height} {
-      transform: translateY(-$screen-min-height);
-    }
-  }
-
-  .background-divider {
-    min-height: calc(100vh);
-
-    @media #{$media-screen-min-height} {
-      min-height: $screen-min-height;
-    }
-  }
-
   .content {
-    position: absolute;
-    left: calc((100vw / 2) - 512px);
-    width: 1024px;
-    z-index: 100;
-
     h1 {
       font-size: 40px;
-      padding-top: 110px;
-      padding-bottom: 110px;
       text-align: center;
       text-transform: uppercase;
     }
 
     .text {
-      float: left;
       font-size: 20px;
       line-height: 34px;
 
@@ -99,6 +32,107 @@
 
     .button:hover {
       background-color: $color-red-dark;
+    }
+  }
+
+  @media #{$media-screen-lg} {
+    position: relative;
+    height: calc(100vh);
+    min-height: $screen-min-height;
+
+    &.background-white {
+      .background-divider-left {
+        border-bottom: calc(100vh) solid $color-white-light;
+
+        @media #{$media-screen-min-height} {
+          border-bottom-width: $screen-min-height;
+        }
+      }
+      .background-divider-right {
+        background-color: $color-white-dark;
+      }
+    }
+
+    &.background-blue {
+      .background-divider-left {
+        border-top: calc(100vh) solid $color-blue-light;
+
+        @media #{$media-screen-min-height} {
+          border-top-width: $screen-min-height;
+        }
+      }
+      .background-divider-right {
+        background-color: $color-blue-dark;
+      }
+    }
+
+    .background-divider-left {
+      position: relative;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-right: calc(37.5vw) solid transparent;
+      padding-left: calc(37.5vw);
+      z-index: 2;
+    }
+
+    .background-divider-right {
+      transform: translateY(-100vh);
+      width: 100%;
+      z-index: 1;
+
+      @media #{$media-screen-min-height} {
+        transform: translateY(-$screen-min-height);
+      }
+    }
+
+    .background-divider {
+      min-height: calc(100vh);
+
+      @media #{$media-screen-min-height} {
+        min-height: $screen-min-height;
+      }
+    }
+
+    .content {
+      position: absolute;
+      left: calc((100vw / 2) - 512px);
+      width: 1024px;
+      z-index: 100;
+
+      .text {
+        float: left;
+      }
+
+      h1 {
+        padding-top: 110px;
+        padding-bottom: 110px;
+      }
+    }
+  }
+
+  @media #{$media-screen-md} {
+    position: relative;
+    max-width: calc(100vw);
+    overflow-x: hidden;
+
+    .content {
+      margin: 25px;
+      max-width: calc(100vw - 25px);
+    }
+
+    &.background-blue {
+      background-color: $color-blue-light;
+      color: white;
+    }
+
+    h1 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .button {
+      display: block;
     }
   }
 }

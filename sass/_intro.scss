@@ -1,41 +1,95 @@
 @import 'variables';
 
 #intro {
-  .content {
-    .text {
-      color: #262261;
-      width: 506px;
+  @media #{$media-screen-lg} {
+    .content {
+      .text {
+        color: #262261;
+        width: 506px;
 
-      p {
-        margin-left: 100px;
+        p {
+          margin-left: 100px;
+        }
+
+        @media #{$media-screen-md} {
+          width: 100%;
+
+          p {
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 30px;
+          }
+        }
+      }
+
+      .pictures {
+        width: 512px;
+        float: right;
+
+        .picture-1 {
+          background-color: $color-blue-dark;
+          width: 300px;
+          height: 175px;
+
+          transform: translateX(140px) translateY(30px) rotate(15deg);
+        }
+
+        .picture-2 {
+          background-color: $color-red-dark;
+          width: 300px;
+          height: 175px;
+
+          transform: translateX(140px) translateY(-10px) rotate(-15deg);
+        }
       }
     }
 
-    .pictures {
-      width: 512px;
-      float: right;
-
-      .picture-1 {
-        background-color: $color-blue-dark;
-        width: 300px;
-        height: 175px;
-
-        transform: translateX(140px) translateY(30px) rotate(15deg);
-      }
-
-      .picture-2 {
-        background-color: $color-red-dark;
-        width: 300px;
-        height: 175px;
-
-        transform: translateX(140px) translateY(-10px) rotate(-15deg);
-      }
+    .launch-demo {
+      position: absolute;
+      bottom: 85px;
+      text-align: center;
     }
   }
 
-  .launch-demo {
-    position: absolute;
-    bottom: 85px;
-    text-align: center;
+  @media #{$media-screen-md} {
+    .content {
+      .text {
+        color: #262261;
+        width: calc(100vw);
+
+        p {
+          font-size: 30px;
+          width: calc(100vw - 50px);
+          padding-bottom: 20px;
+        }
+      }
+
+      .pictures {
+        width: calc(100vw);
+        transform: translateX(calc(50vw - 275px));
+        padding-bottom: 45px;
+
+        .picture-1 {
+          background-color: $color-blue-dark;
+          width: 300px;
+          height: 175px;
+
+          transform: translateX(140px) translateY(30px) rotate(15deg);
+        }
+
+        .picture-2 {
+          background-color: $color-red-dark;
+          width: 300px;
+          height: 175px;
+
+          transform: translateX(140px) translateY(-10px) rotate(-15deg);
+        }
+      }
+
+      .launch-demo {
+        margin: 40px;
+        transform: translateX(-25px);
+      }
+    }
   }
 }

@@ -11,9 +11,8 @@ $line-height-base:       1.5;
 // Breakpoints
 //
 
-$sm-viewport: 560px;
-$md-viewport: 760px;
-$lg-viewport: 960px;
+$md-viewport: 512px;
+$lg-viewport: 850px;
 
 //
 // Spacing
@@ -21,8 +20,11 @@ $lg-viewport: 960px;
 
 $spacer: 1rem;
 
-$media-screen-min-height: "screen and (max-height: $screen-min-height)";
-$screen-min-height: 1000px;
+$screen-min-height: 900px;
+$media-screen-min-height: "screen and (max-height: $screen-min-height), screen and (max-width: $lg-viewport)";
+$media-screen-lg: "screen and (min-width: $lg-viewport)";
+$media-screen-md: "screen and (max-width: $lg-viewport)";
+$media-screen-sm: "screen and (max-width: $md-viewport)";
 
 $color-black: #000000;
 $color-blue-dark: #262261;
