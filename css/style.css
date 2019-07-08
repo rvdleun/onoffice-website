@@ -431,10 +431,12 @@ body {
     height: 175px;
     transform: translateX(140px) translateY(-10px) rotate(-15deg);
   }
-  #intro .launch-demo {
-    position: absolute;
-    bottom: 85px;
-    text-align: center;
+  #intro #download {
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  #intro #download img {
+    padding: 0 10px;
   }
 }
 

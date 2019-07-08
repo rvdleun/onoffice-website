@@ -44,10 +44,13 @@
       }
     }
 
-    .launch-demo {
-      position: absolute;
-      bottom: 85px;
-      text-align: center;
+    #download {
+      cursor: pointer;
+      margin-top: 50px;
+
+      img {
+        padding: 0 10px;
+      }
     }
   }
 
