@@ -223,6 +223,7 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -356,41 +357,25 @@ body {
   }
 }
 
-@media screen and (min-width: 850px) {
-  #header {
-    overflow: hidden;
-  }
-  #header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
-    overflow: hidden;
-  }
+#header {
+  background-color: black;
 }
 
-@media screen and (max-width: 850px) {
-  #header.screen {
-    min-height: 0;
-  }
-  #header video {
-    width: 100%;
-  }
+#header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #footer {
-  max-height: 250px;
+  max-height: 150px;
   overflow: hidden;
 }
 
 #footer .content {
-  color: #ffffff;
-  margin-top: 110px;
+  color: #262261;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 850px) {
@@ -420,16 +405,25 @@ body {
     float: right;
   }
   #intro .content .pictures .picture-1 {
+    background-image: url("../assets/image/intro-1.png");
+    background-size: cover;
     background-color: #262261;
     width: 300px;
     height: 175px;
     transform: translateX(140px) translateY(30px) rotate(15deg);
   }
   #intro .content .pictures .picture-2 {
+    background-image: url("../assets/image/intro-2.png");
+    background-size: cover;
     background-color: #E53543;
     width: 300px;
     height: 175px;
     transform: translateX(140px) translateY(-10px) rotate(-15deg);
+  }
+  #intro .content #supported-headsets {
+    width: 200%;
+    font-size: 14px;
+    line-height: 20px;
   }
   #intro #download {
     cursor: pointer;
@@ -446,7 +440,7 @@ body {
     width: calc(100vw);
   }
   #intro .content .text p {
-    font-size: 30px;
+    font-size: 24px;
     width: calc(100vw - 50px);
     padding-bottom: 20px;
   }
@@ -456,12 +450,16 @@ body {
     padding-bottom: 45px;
   }
   #intro .content .pictures .picture-1 {
+    background-image: url("../assets/image/intro-1.png");
+    background-size: cover;
     background-color: #262261;
     width: 300px;
     height: 175px;
     transform: translateX(140px) translateY(30px) rotate(15deg);
   }
   #intro .content .pictures .picture-2 {
+    background-image: url("../assets/image/intro-2.png");
+    background-size: cover;
     background-color: #E53543;
     width: 300px;
     height: 175px;
@@ -724,4 +722,13 @@ body {
   .screen .button {
     display: block;
   }
+}
+
+#tutorial h1 {
+  color: #ffffff;
+}
+
+#tutorial iframe {
+  width: 100%;
+  height: calc(60vh);
 }

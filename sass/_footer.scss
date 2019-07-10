@@ -1,11 +1,11 @@
 @import 'variables';
 
 #footer {
-  max-height: 250px;
+  max-height: 150px;
   overflow: hidden;
 
   .content {
-    color: $color-white-light;
-    margin-top: 110px;
+    color: $color-blue-dark;
+    margin-top: 50px;
   }
 }
