@@ -375,6 +375,10 @@ body {
   margin-top: 50px;
 }
 
+#footer .content a {
+  color: white;
+}
+
 @media screen and (min-width: 1024px) {
   #intro .content .text {
     color: #262261;
