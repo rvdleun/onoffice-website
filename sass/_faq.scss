@@ -1,0 +1,37 @@
+@import 'variables';
+
+#faq {
+  color: $color-white-light;
+
+  @media #{$media-screen-lg} {
+    .block {
+      width: 47%;
+
+      &.left {
+        float: left;
+      }
+
+      &.right {
+        float: right;
+      }
+    }
+  }
+
+  .question-answer {
+    margin-bottom: 30px;
+
+    ol {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: white;
+    }
+
+    .question {
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+  }
+}

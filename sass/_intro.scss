@@ -79,8 +79,9 @@
 
       .pictures {
         width: calc(100vw);
-        transform: translateX(calc(50vw - 275px));
+        transform: translateX(calc(50vw - 305px));
         padding-bottom: 45px;
+        float: none;
 
         .picture-1 {
           background-image: url('../assets/image/intro-1.png');

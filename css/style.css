@@ -282,7 +282,6 @@ iframe {
 
 ol,
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -315,48 +314,6 @@ body {
   overflow-x: hidden;
 }
 
-#features .content {
-  top: calc(50vh - 249px);
-}
-
-@media screen and (max-height: 900px), screen and (max-width: 850px) {
-  #features .content {
-    top: calc(450px - 249px);
-  }
-}
-
-#features h1 {
-  padding-top: 0;
-}
-
-#features .features {
-  width: 100%;
-}
-
-#features .features .feature {
-  float: left;
-  text-align: center;
-  width: 33%;
-}
-
-#features .features .feature .icon {
-  width: 200px;
-  height: 250px;
-  border: solid 1px black;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 850px) {
-  #features .features .feature {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    width: 100%;
-  }
-}
-
 #header {
   background-color: black;
 }
@@ -368,17 +325,57 @@ body {
   width: 50%;
 }
 
+@media screen and (max-width: 1024px) {
+  #header img {
+    width: 100%;
+  }
+}
+
+#faq {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  #faq .block {
+    width: 47%;
+  }
+  #faq .block.left {
+    float: left;
+  }
+  #faq .block.right {
+    float: right;
+  }
+}
+
+#faq .question-answer {
+  margin-bottom: 30px;
+}
+
+#faq .question-answer ol {
+  margin-bottom: 10px;
+}
+
+#faq .question-answer a {
+  color: white;
+}
+
+#faq .question-answer .question {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
 #footer {
   max-height: 150px;
   overflow: hidden;
 }
 
 #footer .content {
-  color: #262261;
+  color: #ffffff;
   margin-top: 50px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   #intro .content .text {
     color: #262261;
     width: 506px;
@@ -388,7 +385,7 @@ body {
   }
 }
 
-@media screen and (min-width: 850px) and (max-width: 850px) {
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
   #intro .content .text {
     width: 100%;
   }
@@ -399,7 +396,7 @@ body {
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   #intro .content .pictures {
     width: 512px;
     float: right;
@@ -434,7 +431,7 @@ body {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
   #intro .content .text {
     color: #262261;
     width: calc(100vw);
@@ -446,8 +443,9 @@ body {
   }
   #intro .content .pictures {
     width: calc(100vw);
-    transform: translateX(calc(50vw - 275px));
+    transform: translateX(calc(50vw - 305px));
     padding-bottom: 45px;
+    float: none;
   }
   #intro .content .pictures .picture-1 {
     background-image: url("../assets/image/intro-1.png");
@@ -468,119 +466,6 @@ body {
   #intro .content .launch-demo {
     margin: 40px;
     transform: translateX(-25px);
-  }
-}
-
-#join-today {
-  color: #ffffff;
-  text-align: center;
-}
-
-#join-today .content {
-  top: calc(50vh - height-content-half);
-}
-
-@media screen and (max-height: 900px), screen and (max-width: 850px) {
-  #join-today .content {
-    top: calc(450px - 202px);
-  }
-}
-
-#join-today h1,
-#join-today .text {
-  padding-top: 0;
-  padding-bottom: 85px;
-}
-
-#join-today p {
-  max-width: 1024px;
-}
-
-@media screen and (max-width: 850px) {
-  #join-today p {
-    width: auto;
-  }
-}
-
-#join-today .form {
-  padding: 0 20px;
-  text-align: center;
-}
-
-#join-today .form input {
-  float: left;
-  font-size: 18px;
-  width: calc(100% - 240px);
-  padding: 35px 45px;
-  color: #000000;
-}
-
-#join-today .form button {
-  float: right;
-  padding: 28px 50px;
-}
-
-@media screen and (max-width: 850px) {
-  #join-today .form button,
-  #join-today .form input {
-    width: 100%;
-    float: none;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .menu {
-    color: white;
-    font-size: 18px;
-    letter-spacing: 4.5px;
-    text-transform: uppercase;
-  }
-  .menu.scrolled .background {
-    opacity: .666;
-  }
-  .menu.scrolled ul {
-    top: 50px;
-  }
-  .menu .background {
-    position: fixed;
-    top: 0;
-    background-color: #262261;
-    height: 115px;
-    width: 100%;
-    z-index: 1000;
-    opacity: 0;
-    transition: all 1s .25s;
-  }
-  .menu a {
-    color: white;
-    text-decoration: none;
-  }
-  .menu ul {
-    position: fixed;
-    top: 80px;
-    z-index: 1200;
-    transition: all 1s;
-  }
-  .menu ul.left {
-    left: 100px;
-  }
-  .menu ul.right {
-    right: 100px;
-  }
-  .menu ul li {
-    float: left;
-    list-style: none;
-    margin-right: 50px;
-  }
-  .menu ul li:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .menu {
-    display: none;
   }
 }
 
@@ -615,7 +500,7 @@ body {
   background-color: #E53543;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .screen {
     position: relative;
     height: calc(100vh);
@@ -626,13 +511,13 @@ body {
   }
 }
 
-@media screen and (min-width: 850px) and (max-height: 900px), screen and (min-width: 850px) and (max-width: 850px) {
+@media screen and (min-width: 1024px) and (max-height: 900px), screen and (min-width: 1024px) and (max-width: 1024px) {
   .screen.background-white .background-divider-left {
     border-bottom-width: 900px;
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .screen.background-white .background-divider-right {
     background-color: #f4f4f7;
   }
@@ -641,13 +526,13 @@ body {
   }
 }
 
-@media screen and (min-width: 850px) and (max-height: 900px), screen and (min-width: 850px) and (max-width: 850px) {
+@media screen and (min-width: 1024px) and (max-height: 900px), screen and (min-width: 1024px) and (max-width: 1024px) {
   .screen.background-blue .background-divider-left {
     border-top-width: 900px;
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .screen.background-blue .background-divider-right {
     background-color: #262261;
   }
@@ -667,25 +552,25 @@ body {
   }
 }
 
-@media screen and (min-width: 850px) and (max-height: 900px), screen and (min-width: 850px) and (max-width: 850px) {
+@media screen and (min-width: 1024px) and (max-height: 900px), screen and (min-width: 1024px) and (max-width: 1024px) {
   .screen .background-divider-right {
     transform: translateY(-900px);
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .screen .background-divider {
     min-height: calc(100vh);
   }
 }
 
-@media screen and (min-width: 850px) and (max-height: 900px), screen and (min-width: 850px) and (max-width: 850px) {
+@media screen and (min-width: 1024px) and (max-height: 900px), screen and (min-width: 1024px) and (max-width: 1024px) {
   .screen .background-divider {
     min-height: 900px;
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .screen .content {
     position: absolute;
     left: calc((100vw / 2) - 512px);
@@ -701,7 +586,7 @@ body {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
   .screen {
     position: relative;
     max-width: calc(100vw);
@@ -725,7 +610,7 @@ body {
 }
 
 #tutorial h1 {
-  color: #ffffff;
+  color: #262261;
 }
 
 #tutorial iframe {

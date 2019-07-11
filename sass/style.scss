@@ -9,11 +9,9 @@ body {
   overflow-x: hidden;
 }
 
-@import "features";
 @import "header";
+@import "faq";
 @import "footer";
 @import "intro";
-@import "jointoday";
-@import "menu";
 @import "screen";
 @import "tutorial";
